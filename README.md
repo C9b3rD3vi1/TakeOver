@@ -53,11 +53,12 @@ Used Gobuster in vhost mode with a top subdomain list:
 
     gobuster vhost -u http://futurevera.thm -w /usr/share/dnsrecon/dnsrecon/data/subdomains-top1mil-20000.txt -t 50
 
-This was unsuccessful, I resolved to using ***ffuf** tool
+This was unsuccessful, I resolved to using ***ffuf*** tool
 
-Used **ffuf** in  mode with a top subdomain list:
+Used ***ffuf*** in  mode with a top subdomain list:
 
      ffuf -u https://FUZZ.futurevera.thm -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt -t 100 --timeout 3 -b 403,404
+
 
 This fuzzing found a few subdomains
 
@@ -68,11 +69,9 @@ Add this subdomain to the /etc/hosts file and try acccessing them via the web br
 ![subdomains](./subdomains.png)
 
 Accessing this subdomains through the web browser was successful but they didnt give me much information to work with
+
 ![blog](./blog.png)
 ![portal](./portal.png)
 ![support](./support.png)
-
-
-
 
 However, this was unsuccessful due to SSL/TLS errors. So I pivoted to passive recon...
