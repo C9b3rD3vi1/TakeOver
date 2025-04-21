@@ -71,7 +71,7 @@ Add this subdomain to the /etc/hosts file and try acccessing them via the web br
 Accessing this subdomains through the web browser was successful but they didnt give me much information to work with
 
 ![blog](./blog.png)
-![portal](./portal.png)
+![portal](portal.png)
 ![support](./support.png)
 
 However, this was unsuccessful due to SSL/TLS errors. So I pivoted to passive recon...
