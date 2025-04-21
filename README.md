@@ -78,5 +78,19 @@ Heres the web images
 
 ![support](./support.png)
 
-
 However, this was unsuccessful due to SSL/TLS errors. So I pivoted to passive recon...
+
+3️⃣ Certificate Inspection
+
+I Used openssl to check for hidden SAN entries in the SSL certificate:
+
+    openssl s_client -connect futurevera.thm:443
+
+The certificate retrieved is
+
+Self-signed
+Expired (March 2023)
+Only issued for futurevera.thm — no Subject Alternative Names (SANs) listed or visible in the output.
+
+But there was no much information with this method so i resolved on investigating each domain certificate through the web-browser
+
