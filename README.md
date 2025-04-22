@@ -40,3 +40,10 @@ Added base domain to /etc/hosts:
 
 ![Add base domain to /etc/hosts](./hosts_add.png)
 
+Verified web service running:
+
+    http://futurevera.thm
+
+This allow you to access the web interface of the challenge in the browser
+
+![http://futurevera.thm](./futureVera.png)
