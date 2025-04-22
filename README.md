@@ -36,6 +36,7 @@ In this challenge, I gained unauthorized access to an internal support subdomain
 1️⃣ Initial Recon & Setup
 Downloaded and connected to the THM machine.
 
-Added base domain to /etc/ihosts:
+Added base domain to /etc/hosts:
 
 ![Add base domain to /etc/hosts](./hosts_add.png)
+
