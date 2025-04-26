@@ -124,3 +124,10 @@ Added the newly discovered subdomain to /etc/hosts:
 
 ![secret subdomain](./secrets.png)
 
+Accessed the found subdomain in the browser:
+
+![Found Flag](./flag.png)
+
+## ✅ Conclusion
+
+This TakeOver challenge demonstrates the critical importance of thorough reconnaissance and understanding how misconfigurations in DNS and certificate management can lead to serious vulnerabilities. By using nothing more than a browser's certificate viewer, I was able to identify a hidden subdomain that served as the entry point for a potential subdomain takeover.
