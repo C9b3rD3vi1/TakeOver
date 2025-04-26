@@ -114,5 +114,13 @@ Located the Subject Alternative Name (SAN) field.
 📌 Found:
 
 DNS Name:
+![DNS Name](./dns_name.png)
 
 ***This hinted at a hidden subdomain with potential misconfiguration.***
+
+## Mapping the Subdomain
+
+Added the newly discovered subdomain to /etc/hosts:
+
+![secret subdomain](./secrets.png)
+
