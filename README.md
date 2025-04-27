@@ -29,6 +29,8 @@ In this challenge, I gained unauthorized access to an internal support subdomain
 
     Web browser
 
+    Wordlists: Seclists
+
     /etc/hosts editing
 
 ## 🚀 Step-by-Step Walkthrough
@@ -92,5 +94,25 @@ Self-signed
 Expired (March 2023)
 Only issued for futurevera.thm — no Subject Alternative Names (SANs) listed or visible in the output.
 
-But there was no much information with this method so i resolved on investigating each domain certificate through the web-browser
+But there was no much information with this method so I resolved to investigating each subdomain certificate through the web-browser
 
+## Discovering a Hidden Subdomain (No Openssl Required)
+
+Navigated to:
+
+    https://support.futurevera.thm
+Steps:
+
+In the browser (Chrome/Firefox):
+
+Clicked the padlock 🔒 in the address bar.
+
+Chose "Certificate" > "Details".
+
+Located the Subject Alternative Name (SAN) field.
+
+📌 Found:
+
+DNS Name:
+
+***This hinted at a hidden subdomain with potential misconfiguration.***
