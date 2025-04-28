@@ -91,8 +91,10 @@ I Used openssl to check for hidden SAN entries in the SSL certificate:
 The certificate retrieved is
 
 Self-signed
+
 Expired (March 2023)
-Only issued for futurevera.thm — no Subject Alternative Names (SANs) listed or visible in the output.
+
+Only issued for futurevera.thm — no Subject Alternative Names (SANs) listed visible in the output.
 
 But there was no much information with this method so I resolved to investigating each subdomain certificate through the web-browser
 
