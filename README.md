@@ -40,7 +40,7 @@ Downloaded and connected to the THM machine.
 
 Added base domain to /etc/hosts:
 
-![Add base domain to /etc/hosts](./hosts_add.png)
+![Add base domain to /etc/hosts](./hostadd.png)
 
 Verified web service running:
 
